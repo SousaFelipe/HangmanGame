@@ -14,10 +14,11 @@ file(COPY
 add_executable (HangmanGame "main.cpp"
 				"src/utils/console.h" "src/utils/console.cpp"
 				"src/core/game.h" "src/core/game.cpp"
+				"src/utils/files.h" "src/utils/files.cpp"
 				"src/game/hud.h" "src/game/hud.cpp"
 				"src/game/man.h" "src/game/man.cpp"
 				"src/game/member.h" "src/game/member.cpp"
-				"src/core/sprite.cpp" "src/core/sprite.h" "src/utils/files.h" "src/utils/files.cpp")
+				"src/core/sprite.cpp" "src/core/sprite.h")
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
