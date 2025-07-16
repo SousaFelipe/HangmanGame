@@ -2,10 +2,11 @@
 
 
 
-Member::Member(const std::string& valid_bmp, const std::string& invalid_bmp)
+Member::Member(const std::string& enabled_bmp, 
+			   const std::string& disabled_bmp)
 {
-	this->sprite_enabled = Sprite(valid_bmp);
-	this->sprite_disabled = Sprite(invalid_bmp);
+	this->sprite_enabled.set_bitmap(enabled_bmp);
+	this->sprite_disabled.set_bitmap(disabled_bmp);
 }
 
 

@@ -10,8 +10,9 @@ class Member
 {
 
 
-public :
-	explicit Member(const std::string& valid_bmp,const std::string& invalid_bmp);
+public:
+	explicit Member(const std::string& enabled_bmp, 
+					const std::string& disabled_bmp);
 	
 	void draw() const;
 	
@@ -25,9 +26,9 @@ public :
 private:
 	bool enabled = true;
 
-	Sprite sprite_enabled;
+	Sprite sprite_enabled = Sprite();
 
-	Sprite sprite_disabled;
+	Sprite sprite_disabled = Sprite();
 
 };
 

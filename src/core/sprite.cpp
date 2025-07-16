@@ -7,9 +7,9 @@
 
 
 
-Sprite::Sprite(const std::string& bitmap_file)
+void Sprite::set_bitmap(const std::string& filename)
 {
-	std::string filepath = files::get_path_from_file(bitmap_file);
+	std::string filepath = files::get_path_from_file(filename);
 	std::ifstream file(filepath);
 
 	if (!file.is_open()) {
@@ -52,5 +52,6 @@ void Sprite::draw() const
 			std::cout << static_cast<char>(bit);
 		}
 	}
+
 	std::cout.flush();
 }

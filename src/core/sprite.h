@@ -11,10 +11,10 @@ class Sprite {
 
 public:
 	Sprite() = default;
-	
-	Sprite(const std::string& bitmap_file);
 
-	virtual void draw() const;
+	void set_bitmap(const std::string& filename);
+
+	void draw() const;
 
 	~Sprite() = default;
 
