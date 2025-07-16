@@ -10,7 +10,7 @@ namespace console {
 		int attempt_count = 0x00;
 		char attempt_char = '\0';
 
-	await_key:
+	user_input:
 		std::cout << '\n' << "INSIRA SEU PALPITE (OU 0 PARA SAIR): ";
 		std::cin >> attempt_char;
 
@@ -31,7 +31,7 @@ namespace console {
 		}
 
 		attempt_count += 1;
-		goto await_key;
+		goto user_input;
 	}
 	
 	
