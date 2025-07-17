@@ -12,7 +12,7 @@ class Game {
 
 
 public:
-    explicit Game(int argc, char **argv);
+    explicit Game(const char* word);
 
     void run();
 
