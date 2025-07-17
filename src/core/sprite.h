@@ -10,20 +10,17 @@ class Sprite {
 
 
 public:
-	Sprite() = default;
+    Sprite() = default;
 
-	void load_bitmap(const std::string& filename);
+    void load_bitmap(const std::string &filename);
 
-	void draw() const;
+    void draw() const;
 
-	~Sprite() = default;
+    ~Sprite() = default;
 
 
 protected:
-	std::vector<int> bitmap = {};
-
+    std::vector<int> bitmap = {};
 };
-
-
 
 #endif

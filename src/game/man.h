@@ -11,22 +11,19 @@ class Man {
 
 
 public:
-	Man() = default;
+    Man() = default;
 
-	void draw();
+    void draw();
 
-	void disable_next_member();
+    void disable_next_member();
 
-	bool is_alive() const;
+    bool is_alive() const;
 
-	~Man() = default;
+    ~Man() = default;
 
 
 private:
-	std::vector<Member> members = {};
-
+    std::vector<Member> members = {};
 };
-
-
 
 #endif

@@ -7,15 +7,19 @@
 
 namespace console {
 
-	constexpr size_t WIDTH = 40;
 
-	char await_user_input();
-
-	void print_line();
-
-	void add_padding(const size_t& word_size);
-}
+constexpr size_t WIDTH = 40;
 
 
+char await_user_input();
+
+
+void print_line();
+
+
+void add_padding(const size_t &word_size);
+
+
+} // namespace console
 
 #endif

@@ -9,9 +9,10 @@
 
 namespace files {
 
-	std::string get_path_from_file(const std::string& filename);
-}
+
+std::string get_path_from_file(const std::string &filename);
 
 
+} // namespace files
 
 #endif

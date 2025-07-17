@@ -12,28 +12,25 @@ class Game {
 
 
 public:
-	explicit Game(int argc, char** argv);
+    explicit Game(int argc, char **argv);
 
-	void run();
+    void run();
 
-	void update();
+    void update();
 
-	bool is_runnig() const;
+    bool is_runnig() const;
 
-	~Game();
+    ~Game();
 
 
 private:
-	Man man = Man();
+    Man man = Man();
 
-	std::vector<char> word = {};
-	
-	std::vector<char> hits = {};
+    std::vector<char> word = {};
 
-	std::vector<char> errors = {};
+    std::vector<char> hits = {};
 
+    std::vector<char> errors = {};
 };
-
-
 
 #endif

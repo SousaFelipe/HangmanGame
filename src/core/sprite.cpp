@@ -7,50 +7,46 @@
 
 
 
-void Sprite::load_bitmap(const std::string& filename)
+void Sprite::load_bitmap(const std::string &filename)
 {
     std::ifstream file(files::get_path_from_file(filename));
 
-	if (!file.is_open()) {
-		std::cerr << "Erro na leitura do bitmap!" << '\n';
-		system("pause");
-		exit(-1);
-	}
+    if (!file.is_open()) {
+        std::cerr << "Erro na leitura do bitmap!" << '\n';
+        system("pause");
+        exit(-1);
+    }
 
-	std::string line;
+    std::string line;
 
-	while (std::getline(file, line)) {
+    while (std::getline(file, line)) {
 
-		std::istringstream stream(line);
-		std::string token;
+        std::istringstream stream(line);
+        std::string token;
 
-		while (std::getline(stream, token, ' ')) {
-			try {
-				this->bitmap.push_back(std::stoi(token));
-			}
-			catch (const std::invalid_argument&) {
-				this->bitmap.push_back(63);
-			}
-		}
+        while (std::getline(stream, token, ' ')) {
+            try {
+                this->bitmap.push_back(std::stoi(token));
+            } catch (const std::invalid_argument &) {
+                this->bitmap.push_back(63);
+            }
+        }
 
-		this->bitmap.push_back(10);
-	}
+        this->bitmap.push_back(10);
+    }
 
-	file.close();
+    file.close();
 }
-
-
 
 void Sprite::draw() const
 {
-	for (const int bit : this->bitmap) {
-		if (bit == 10) {
-			std::cout << '\n';
-		}
-		else {
-			std::cout << static_cast<char>(bit);
-		}
-	}
+    for (const int bit : this->bitmap) {
+        if (bit == 10) {
+            std::cout << '\n';
+        } else {
+            std::cout << static_cast<char>(bit);
+        }
+    }
 
-	std::cout.flush();
+    std::cout.flush();
 }

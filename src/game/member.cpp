@@ -2,36 +2,33 @@
 
 
 
-Member::Member(const std::string& enabled_bmp, const std::string& disabled_bmp)
+Member::Member(const std::string &enabled_bmp, const std::string &disabled_bmp)
 {
-	this->sprite_enabled.load_bitmap(enabled_bmp);
-	this->sprite_disabled.load_bitmap(disabled_bmp);
+    this->sprite_enabled.load_bitmap(enabled_bmp);
+    this->sprite_disabled.load_bitmap(disabled_bmp);
 }
 
 
 
 void Member::draw() const
 {
-	if (enabled)
-	{
-		sprite_enabled.draw();
-	}
-	else
-	{
-		sprite_disabled.draw();
-	}
+    if (enabled) {
+        sprite_enabled.draw();
+    } else {
+        sprite_disabled.draw();
+    }
 }
 
 
 
 void Member::disable()
 {
-	enabled = false;
+    enabled = false;
 }
 
 
 
 bool Member::is_enabled() const
 {
-	return enabled;
+    return enabled;
 }
