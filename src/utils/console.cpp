@@ -7,7 +7,7 @@ namespace console {
 
 	char await_user_input()
 	{
-		int attempt_count = 0x00;
+		size_t attempt_count = 0x00;
 		char attempt_char = '\0';
 
 	user_input:
@@ -37,7 +37,7 @@ namespace console {
 	
 	void print_line()
 	{
-		for (unsigned int i = 0; i < console::WIDTH; i++) {
+		for (size_t i = 0; i < console::WIDTH; i++) {
 			std::cout << static_cast<char>(205);
 		}
 		std::cout << std::endl;
@@ -49,7 +49,7 @@ namespace console {
 		auto width_mid = std::floor(console::WIDTH / 2);
 		auto rword_mid = std::floor(((word_size * 2) - 1) / 2);
 
-		for (unsigned int i = 0; i < width_mid - rword_mid; i++) {
+		for (size_t i = 0; i < width_mid - rword_mid; i++) {
 			std::cout << ' ';
 		}
 

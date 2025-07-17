@@ -9,7 +9,6 @@
 
 namespace files {
 
-
 	std::string get_path_from_file(const std::string& filename);
 }
 

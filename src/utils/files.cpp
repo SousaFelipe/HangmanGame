@@ -16,8 +16,6 @@ namespace files {
 		std::filesystem::path cwd = std::filesystem::current_path();
 		std::filesystem::path filepath = cwd;
 
-		return filepath.string()
-			.append("\\res\\")
-			.append(filename);
+		return filepath.string().append("\\res\\").append(filename);
 	}
 }

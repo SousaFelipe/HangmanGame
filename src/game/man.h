@@ -11,7 +11,7 @@ class Man {
 
 
 public:
-	explicit Man();
+	Man() = default;
 
 	void draw();
 

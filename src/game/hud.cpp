@@ -10,7 +10,7 @@ void HUD::draw(std::vector<char>& word,
 	std::cout << std::endl;
 	console::add_padding(word.size());
 
-	for (unsigned int i = 0; i < word.size(); i++) {
+	for (size_t i = 0; i < word.size(); i++) {
 		std::cout << hits[i] << ' ';
 	}
 

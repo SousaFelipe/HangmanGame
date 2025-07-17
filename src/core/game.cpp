@@ -33,10 +33,10 @@ void Game::run()
 {
 	while (this->is_runnig() && this->man.is_alive()) {
 
-		unsigned int hit_cout = 0;
+		size_t hit_cout = 0;
 		const char attempt = console::await_user_input();
 
-		for (unsigned int i = 0; i < this->word.size(); i++) {
+		for (size_t i = 0; i < this->word.size(); i++) {
 			if (this->word[i] == attempt) {
 				this->hits[i] = attempt;
 				hit_cout++;

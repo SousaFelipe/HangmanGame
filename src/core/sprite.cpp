@@ -7,10 +7,9 @@
 
 
 
-void Sprite::set_bitmap(const std::string& filename)
+void Sprite::load_bitmap(const std::string& filename)
 {
-	std::string filepath = files::get_path_from_file(filename);
-	std::ifstream file(filepath);
+    std::ifstream file(files::get_path_from_file(filename));
 
 	if (!file.is_open()) {
 		std::cerr << "Erro na leitura do bitmap!" << '\n';

@@ -12,7 +12,7 @@ class Sprite {
 public:
 	Sprite() = default;
 
-	void set_bitmap(const std::string& filename);
+	void load_bitmap(const std::string& filename);
 
 	void draw() const;
 

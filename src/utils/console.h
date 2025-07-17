@@ -7,9 +7,7 @@
 
 namespace console {
 
-
-	constexpr unsigned int WIDTH = 40;
-
+	constexpr size_t WIDTH = 40;
 
 	char await_user_input();
 

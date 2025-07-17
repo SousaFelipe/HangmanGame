@@ -4,11 +4,11 @@
 
 
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
-	Game game = Game(argc, argv);
-	game.update();
-	game.run();
+    Game game = Game(argc, argv);
+    game.update();
+    game.run();
 
-	return 0;
+    return 0;
 }
