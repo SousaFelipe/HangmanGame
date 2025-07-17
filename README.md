@@ -1,37 +1,37 @@
 # Hangman Game
 
-O que acontece quando um programador fica ocioso?\
-Neste caso, um jogo da forca que roda no terminal! 😉👍
+What happens when a programmer is bored?\
+In this case, a hangman game that runs in the terminal! 😉👍
 
 ### Disclaimer!
 
-Este projeto foi criado apenas para exercitar minhas poucas habilidades com C++.\
-A ideia aqui não é criar algo incrível. Apenas "quebrar cabeça" com algumas passagens de parâmetro por referência, ponteiros, vetores, strings, entender um pouco sobre os `Code Styles`... E no meio disso tudo, experimentar agudas oscilações entre amor e ódio ao nosso querido POO. Hehehe!
+This project was created solely to practice my limited C++ skills.\
+The idea here isn't to create something incredible. Just to puzzle over some parameter-by-reference passing, pointers, arrays, strings, understand a bit about Code Styles... And, with that, experience sharp swings between love and hate for our beloved OOP. Hehehe!
 
-Em fim, se você for um iniciante em C++, assim como eu, fique à vontade para baixar e fuçar este repositório\
-Também aceitarei dicas, correções, reclamações, PIIIIIIIIX... (brincadeira!)
+Finally, if you're a C++ beginner like me, feel free to download and explore this repository.\
+I'll also accept tips, corrections, complaints, CASH... (just kidding!)
 
-Estrutura do projeto
+Project structure
 ---------------
-    ├─ HangmanGame/        Pasta do projeto
-    │  └─ src/             Código fonte da aplicação
-    │     ├─ core/         Arquivos base dedicados à "renderização" e fluxo do jogo
-    │     ├─ game/         "Objetos" da "cena" do jogo
-    │     ├─ utils/        Funções úteis de fluxo de saída/entrada do terminal e leitura de arquivos
-    └     └─ main.cpp      Ponto de entrada do jogo
+    ├─ HangmanGame/        Project folder
+    │  └─ src/             Application source code
+    │     ├─ core/         Base files dedicated to "rendering" and game flow
+    │     ├─ game/         Game scene objects
+    │     ├─ utils/        Useful terminal input/output stream and file reading functions
+    └     └─ main.cpp      Application entry point
 
 
 
 ## Code Styles Guidelines
 
-A formatação do código está baseada no padrão [WebKit](https://webkit.org/code-style-guidelines/)\
-Mas existem algumas ressalvas (que eu ainda não descobri com inseri-las no .clang-format 😐)
+Code formatting is based on the [WebKit](https://webkit.org/code-style-guidelines/) standard.\
+But there are some caveats (which I haven't figured out yet by inserting them into .clang-format 😐)
 
 
 
-> 3 linhas de espaçamento vertical entre o último `#include` e a primeira função, variável global, definição de classe, etc...
+> 3 lines of vertical spacing between the last `#include` and the first function, global variable, class definition, etc...
 
-Exemplo:
+Example:
 ```cpp
 ...
 #include "../utils/console.h"
@@ -44,12 +44,10 @@ Game::Game(const char* word)
 }
 ```
 
+> 3 lines of vertical spacing between each function\
+> Except when inside a `namespace`. In this case, use only 2 lines of vertical spacing
 
-
-> 3 linhas de espaçamento vertical entre cada função\
-> Exceto quando estiver dentro de um `namespace`. Neste caso, utilize apenas 2 linhas de espaçamento vertical
-
-Exemplo:
+Example:
 ```cpp
 void Sprite::load_bitmap(const std::string &filename)
 {
@@ -64,21 +62,19 @@ void Sprite::draw() const
 }
 ```
 
-
-
-Exemplo com namespace:
+Example with namespace:
 ```cpp
 
-namespace namespace_qualquer {
+namespace any_namespace {
 
 
-void funcao_dentro_do_namespace()
+void function_within_namespace()
 {
     ....
 }
 
 
-int outra_funcao_dentro_do_namespace()
+int another_function_within_the_namespace()
 {
     ....
 }
