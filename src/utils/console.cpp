@@ -40,6 +40,7 @@ void print_line()
     for (size_t i = 0; i < console::WIDTH; i++) {
         std::cout << static_cast<char>(205);
     }
+
     std::cout << std::endl;
 }
 

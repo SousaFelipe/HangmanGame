@@ -8,7 +8,7 @@ int main(int argc, char **argv)
         std::cerr << '\n' << "Voce deve iniciar o programa com o comando: .\\HangmanGame.exe";
         std::cerr << "\033[32m" << " palavra" << "\033[0m" << "\n\n";
         system("pause");
-        exit(-1);
+        return -1;
     }
 
     const char* word = argv[1];
@@ -17,7 +17,7 @@ int main(int argc, char **argv)
         std::cerr << '\n' << "A palavra misteriosa deve conter de 4 a 16 caracteres...";
         std::cerr << '\n' << "A que voce inseriu contem " << len << "!\n\n";
         system("pause");
-        exit(-1);
+        return -1;
     }
 
     Game game = Game(word);
