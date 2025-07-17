@@ -1,6 +1,4 @@
-﻿#pragma once
-
-#include "src/core/game.h"
+﻿#include "src/core/game.h"
 
 
 

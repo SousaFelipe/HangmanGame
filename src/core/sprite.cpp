@@ -38,6 +38,8 @@ void Sprite::load_bitmap(const std::string &filename)
     file.close();
 }
 
+
+
 void Sprite::draw() const
 {
     for (const int bit : this->bitmap) {

@@ -18,8 +18,6 @@ public:
 
     void update();
 
-    bool is_runnig() const;
-
     ~Game();
 
 
@@ -31,6 +29,8 @@ private:
     std::vector<char> hits = {};
 
     std::vector<char> errors = {};
+
+    bool hits_have_underscore() const;
 };
 
 

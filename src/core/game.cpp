@@ -15,7 +15,7 @@ Game::Game(const char* word)
 
 void Game::run()
 {
-    while (this->is_runnig() && this->man.is_alive()) {
+    while (this->man.is_alive() && this->hits_have_underscore()) {
 
         size_t hit_cout = 0;
         const char attempt = console::await_user_input();
@@ -47,19 +47,16 @@ void Game::update()
 
 
 
-bool Game::is_runnig() const
+bool Game::hits_have_underscore() const
 {
-    const __int64 dash_count
-        = std::count_if(this->hits.begin(), this->hits.end(), [](const char& h) { return h == '_'; });
-
-    return dash_count > 0;
+    return std::find(this->hits.begin(), this->hits.end(), '_') != this->hits.end();
 }
 
 
 
 Game::~Game()
 {
-    if (this->errors.size() < 3) {
+    if (this->man.is_alive() && !this->hits_have_underscore()) {
         std::cout << "\033[32m" << "PARABENS, VOCE ACERTOU A PALAVRA!";
     } else {
         std::cout << "\033[31m" << "VOCE PERDEU! A PALAVRA ERA: ";
