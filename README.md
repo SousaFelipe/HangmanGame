@@ -8,7 +8,7 @@ Neste caso, um jogo da forca que roda no terminal! 😉👍
 Este projeto foi criado apenas para exercitar minhas poucas habilidades com C++.\
 A ideia aqui não é criar algo incrível. Apenas "quebrar cabeça" com algumas passagens de parâmetro por referência, ponteiros, vetores, strings, entender um pouco sobre os `Code Styles`... E no meio disso tudo, experimentar agudas oscilações entre amor e ódio ao nosso querido POO. Hehehe!
 
-Em fim, se você for um iniciante em C++, assim como eu, fique a vontade para baixar e fuçar este repositório\
+Em fim, se você for um iniciante em C++, assim como eu, fique à vontade para baixar e fuçar este repositório\
 Também aceitarei dicas, correções, reclamações, PIIIIIIIIX... (brincadeira!)
 
 Estrutura do projeto
@@ -25,7 +25,7 @@ Estrutura do projeto
 ## Code Styles Guidelines
 
 A formatação do código está baseada no padrão [WebKit](https://webkit.org/code-style-guidelines/)\
-Mas existem algumas ressalvas (que eu ainda não descobri com inseri-las no .clang-format 😐)\
+Mas existem algumas ressalvas (que eu ainda não descobri com inseri-las no .clang-format 😐)
 
 
 
