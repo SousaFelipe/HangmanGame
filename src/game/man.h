@@ -1,5 +1,5 @@
-#ifndef MAN_H
-#define MAN_H
+#ifndef HANGMAN_GAME_MAN_H_
+#define HANGMAN_GAME_MAN_H_
 
 #include <ranges>
 #include <vector>
@@ -26,4 +26,6 @@ private:
     std::vector<Member> members = {};
 };
 
-#endif
+
+
+#endif // HANGMAN_GAME_MAN_H_

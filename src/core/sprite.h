@@ -1,5 +1,5 @@
-#ifndef FRAME_H
-#define FRAME_H
+#ifndef HANGMAN_CORE_FRAME_H
+#define HANGMAN_CORE_FRAME_H
 
 #include <string>
 #include <vector>
@@ -23,4 +23,6 @@ protected:
     std::vector<int> bitmap = {};
 };
 
-#endif
+
+
+#endif // HANGMAN_CORE_FRAME_H

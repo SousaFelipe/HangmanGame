@@ -1,5 +1,5 @@
-#ifndef MEMBER_H
-#define MEMBER_H
+#ifndef HANGMAN_GAME_MEMBER_H_
+#define HANGMAN_GAME_MEMBER_H_
 
 #include <string>
 #include "../core/sprite.h"
@@ -29,4 +29,6 @@ private:
     Sprite sprite_disabled = Sprite();
 };
 
-#endif
+
+
+#endif // HANGMAN_GAME_MEMBER_H_

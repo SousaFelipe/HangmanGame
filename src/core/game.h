@@ -1,5 +1,5 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef HANGMAN_CORE_GAME_H_
+#define HANGMAN_CORE_GAME_H_
 
 #include <iostream>
 #include <vector>
@@ -33,4 +33,6 @@ private:
     std::vector<char> errors = {};
 };
 
-#endif
+
+
+#endif // HANGMAN_CORE_GAME_H_

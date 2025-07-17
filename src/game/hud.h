@@ -1,5 +1,5 @@
-#ifndef HUD_H
-#define HUD_H
+#ifndef HANGMAN_GAME_HUD_H
+#define HANGMAN_GAME_HUD_H
 
 #include <cmath>
 #include <iostream>
@@ -23,4 +23,4 @@ private:
 
 
 
-#endif
+#endif // HANGMAN_GAME_HUD_H

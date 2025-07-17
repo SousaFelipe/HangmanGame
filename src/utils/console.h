@@ -1,5 +1,5 @@
-#ifndef CONSOLE_H
-#define CONSOLE_H
+#ifndef HANGMAN_UTILS_CONSOLE_H_
+#define HANGMAN_UTILS_CONSOLE_H_
 
 #include <iostream>
 
@@ -22,4 +22,6 @@ void add_padding(const size_t &word_size);
 
 } // namespace console
 
-#endif
+
+
+#endif // HANGMAN_UTILS_CONSOLE_H_
