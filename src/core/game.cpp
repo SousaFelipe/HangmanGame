@@ -58,8 +58,7 @@ Game::~Game()
 {
     if (this->man.is_alive() && !this->hits_have_underscore()) {
         std::cout << "\033[32m" << "PARABENS, VOCE ACERTOU A PALAVRA!";
-    }
-    else {
+    } else {
         std::cout << "\033[31m" << "VOCE PERDEU! A PALAVRA ERA: ";
         std::copy(this->word.begin(), this->word.end(), std::ostream_iterator<char>(std::cout, ""));
     }
