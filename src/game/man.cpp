@@ -38,8 +38,7 @@ void Man::disable_next_member()
 
 bool Man::is_alive() const
 {
-    const __int64 valid_count
+    const __int64 valid_member_count
         = std::count_if(members.begin(), members.end(), [](const Member& m) { return m.is_enabled(); });
-
-    return valid_count > 0;
+    return valid_member_count > 0;
 }
