@@ -45,7 +45,7 @@ void print_line()
 }
 
 
-void add_padding(const size_t &word_size)
+void add_padding(const size_t& word_size)
 {
     auto width_mid = std::floor(console::WIDTH / 2);
     auto rword_mid = std::floor(((word_size * 2) - 1) / 2);

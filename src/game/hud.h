@@ -12,7 +12,7 @@ class HUD {
 
 
 public:
-    static void draw(std::vector<char> &word, std::vector<char> &hits, std::vector<char> &errors);
+    static void draw(std::vector<char>& word, std::vector<char>& hits, std::vector<char>& errors);
 
     ~HUD() = default;
 

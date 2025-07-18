@@ -1,8 +1,8 @@
-﻿#include "src/core/game.h"
+#include "src/core/game.h"
 
 
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
     if (argc < 2) {
         std::cerr << '\n' << "Voce deve iniciar o programa com o comando: .\\HangmanGame.exe";

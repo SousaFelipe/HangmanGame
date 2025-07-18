@@ -2,7 +2,7 @@
 
 
 
-void HUD::draw(std::vector<char> &word, std::vector<char> &hits, std::vector<char> &errors)
+void HUD::draw(std::vector<char>& word, std::vector<char>& hits, std::vector<char>& errors)
 {
     console::print_line();
     std::cout << std::endl;

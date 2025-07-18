@@ -33,6 +33,4 @@ private:
     bool hits_have_underscore() const;
 };
 
-
-
 #endif // HANGMAN_CORE_GAME_H_

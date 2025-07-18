@@ -17,7 +17,7 @@ char await_user_input();
 void print_line();
 
 
-void add_padding(const size_t &word_size);
+void add_padding(const size_t& word_size);
 
 
 } // namespace console

@@ -7,7 +7,7 @@
 
 
 
-void Sprite::load_bitmap(const std::string &filename)
+void Sprite::load_bitmap(const std::string& filename)
 {
     std::ifstream file(files::get_path_from_file(filename));
 
@@ -27,7 +27,7 @@ void Sprite::load_bitmap(const std::string &filename)
         while (std::getline(stream, token, ' ')) {
             try {
                 this->bitmap.push_back(std::stoi(token));
-            } catch (const std::invalid_argument &) {
+            } catch (const std::invalid_argument&) {
                 this->bitmap.push_back(63);
             }
         }

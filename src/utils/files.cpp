@@ -5,10 +5,10 @@
 namespace files {
 
 
-std::string get_path_from_file(const std::string &filename)
+std::string get_path_from_file(const std::string& filename)
 {
     if (filename.size() < 5) {
-        std::cerr << "\033[31m" << "O nome do arquivo nao foi informado!" << '\n';
+        std::cerr << "\033[31m" << "O nome do arquivo nao foi informado corretamente!" << '\n';
         system("pause");
         exit(-1);
     }
