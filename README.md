@@ -23,16 +23,33 @@ Project structure
 
 
 
+## Undestending .bmp assets
+The .bmp files in the `res` folder are not actually bitmaps. They are just text files containing characters in decimal format, from the extended [ASCII](https://www.matematica.pt/util/resumos/tabela-ascii.php) table. Below you can check all the characters that were used in the game, to "draw" the character in the terminal.
+
+|  Decimal  | Character |
+|   :---:   |   :---:   |
+|    176    |     ░     |
+|    186    |     ║     |
+|    187    |     ╗     |
+|    188    |     ╝     |
+|    200    |     ╚     |
+|    201    |     ╔     |
+|    202    |     ╩     |
+|    205    |     ═     |
+|    219    |     █     |
+
+
+
+
 ## Code Styles Guidelines
 
 I didn't use any files to standardize code formatting and style, but the code follows some directives based on [WebKit Code Styles](https://webkit.org/code-style-guidelines/)\
-Basic Code Style Rules:\
-- Use 4 spaces for indentation (no tabs)\
-- Use spaces around operators and after commas
-- Use spaces after keywords like `if`, `for`, `while`, etc.\
-- Do not identify the body of a namespace
-- Vertical spacing rules (line breaks) will be further explained below....
-
+Basic Code Style Rules:
+- Use 4 spaces for indentation (no tabs).
+- Use spaces around operators and after commas.
+- Use spaces after keywords like `if`, `for`, `while`, etc.
+- Do not identify the body of a namespace.
+- Vertical spacing rules (line breaks) will be further explained below...
 
 > 3 lines of vertical spacing between the last `#include` and the first function, global variable, class definition, etc...
 
@@ -84,13 +101,23 @@ int another_function_within_the_namespace()
     ....
 }
 
+
 }
 ```
 
 
 
-## Clone
+## Usage
 
+```psh
+cd C:\go\to\the\.exe\file\folder
 ```
-git clone https://github.com/SousaFelipe/HangmanGame.git
+```psh
+.\HangmanGame.exe mysteriousword
 ```
+
+
+
+## License
+
+[MIT](https://github.com/SousaFelipe/HangmanGame/blob/master/LICENSE.txt)
