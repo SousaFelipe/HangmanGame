@@ -96,7 +96,7 @@ void function_within_namespace()
 }
 
 
-int another_function_within_the_namespace()
+int another_function_within_namespace()
 {
     ....
 }
